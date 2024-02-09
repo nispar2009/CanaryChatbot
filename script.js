@@ -4,7 +4,7 @@ ask = () => {
         setValue("ans", "")
         let answers = []
         for (const iterator of Object.keys(localStorage)) {
-            if (q.toLowerCase().includes(iterator)) {
+            if (q.toLowerCase().includes(iterator.toLowerCase())) {
                 answers.push(localStorage.getItem(iterator))
             }
         }
